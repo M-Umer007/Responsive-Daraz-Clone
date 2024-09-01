@@ -1,0 +1,147 @@
+/* Upperline Section */
+.upperline {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center items vertically */
+    width: calc(100% - 20px); /* Adjust width to fit within the container with some margin */
+    height: 10%; /* Adjust height as needed */
+    padding-right: 10px; /* Space from the right edge */
+    margin: 0 auto; /* Center the upperline */
+    position: relative; /* Ensure positioning context */
+}
+
+/* Styling for links like save logo, button, etc. */
+a {
+    font-size: 13px; /* Default size for main screen */
+    color: aliceblue;
+    display: inline-block;
+    font-family: 'Times New Roman';
+    margin-top: 6px;
+    text-decoration: none;
+    margin-right: 20px; /* Space between links */
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text from breaking into new lines */
+}
+
+/* Styling for the main logo inside the upperline */
+.logo {
+    display: flex;
+    margin-left: 20px; /* Space between logo and other elements */
+}
+
+/* Spacing between input and logo */
+.bello {
+    width: 60px;
+    height: 100px;
+}
+
+/* Media Queries */
+
+/* Adjustments for 900px and below */
+@media (min-width:730px) and (max-width: 900px) {
+    .upperline {
+        width: calc(100% - 10px); /* Adjust width for smaller screens */
+        padding-right: 10px;
+    }
+
+    a {
+        font-size: 8px; /* Slightly smaller font size */
+        margin-right: 15px; /* Adjust space between links */
+    }
+
+    .logo {
+        margin-left: 0%;
+        width: 2rem;
+        height: 2rem;
+        margin-top: 3%;
+    }
+
+    .bello {
+        width: 50px;
+        height: 80px;
+    }
+}
+
+
+/* Adjustments for 601px to 729px and below */
+
+
+@media (min-width: 601px) and (max-width: 729px) {
+
+    .upperline {
+        width: 100%;
+        padding-right: 5px; /* Reduce space from right edge */
+        justify-content: flex-end; /* Keep aligned to the right */
+    }
+
+    a {
+        font-size: 6px; /* Smaller font size for smaller screens */
+        margin-right: 10px; /* Adjust space between links */
+    }
+
+    .logo {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-top: 3%;
+    }
+
+    .bello {
+        width: 20px;
+        height: 30px;
+    }
+
+}
+
+/* Adjustments for 600px and below */
+@media (max-width: 600px) {
+    a {
+        font-size: 4px; /* Even smaller font size */
+        margin-right: 8px; /* Adjust space between links */
+    }
+    .logo{
+
+        margin-top: 2.5%;
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+/* Adjustments for 400px and below */
+@media (max-width: 400px) {
+    a {
+        font-size: 4px; /* Smaller font size for very small screens */
+        margin-right: 6px; /* Adjust space between links */
+    }
+
+    .logo {
+        margin-top: 0.5% !important;
+        width: 1rem;
+        height: 1rem;
+
+    }
+
+    .bello {
+        width: 15px;
+        height: 20px;
+    }
+}
+
+/* Adjustments for 300px and below */
+@media (max-width: 300px) {
+    a {
+        font-size: 2px; /* Smallest font size */
+        margin-right: 4px; /* Adjust space between links */
+        margin-top: 1%;
+    }
+
+    .logo {
+        margin-top: 1% !important;
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    .bello {
+        width: 10px;
+        height: 15px;
+    }
+}

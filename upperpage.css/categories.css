@@ -1,0 +1,44 @@
+/* Default Styles (for screens 300px and above) */
+.categories {
+    width: 90%;
+    max-width: 90vw;
+    margin-left: 4%;
+}
+
+.CategoriesP {
+    grid-column: span 8;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Grid layout for images */
+.CategoriesImages {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 columns */
+    column-gap: 20px; /* Gap between columns */
+    row-gap: 20px; /* Gap between rows */
+}
+
+.image-container img {
+    width: 100%; /* Full width of the grid cell */
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .CategoriesImages {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    }
+}
+
+@media (max-width: 480px) {
+    .CategoriesImages {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+}

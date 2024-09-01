@@ -1,0 +1,42 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Default styling */
+.darazUpperPage {
+    background-color: #e64f06;
+    width: 100vw;
+    max-height: 14vh ;
+    height: auto;
+}
+
+@media (max-width:900px) {
+.darazUpperPage{
+    max-height: 11vh;
+}
+}
+
+/* 729px and below */
+@media (max-width: 729px) {
+    .darazUpperPage {
+        height: 8vh; /* Adjust this value as needed */
+        margin-left: -2.4%;
+    }
+}
+
+/* 600px to 728px */
+@media (max-width: 600px) {
+    .darazUpperPage {
+        height: 6vh; /* Adjust this value as needed */
+    }
+}
+
+/* 400px and below */
+@media (max-width: 400px) {
+    .darazUpperPage {
+        height: 4vh; /* Adjust this value as needed */
+    }
+}

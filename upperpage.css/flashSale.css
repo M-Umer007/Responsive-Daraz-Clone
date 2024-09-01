@@ -1,0 +1,134 @@
+/* Default Styles for Flash Sale */
+.Flash-Sale {
+    background-color: white;
+    border: none;
+    position: relative;
+    width: 100%;
+    margin: 10px 1% 10px 3%;
+    overflow: hidden; 
+    
+}
+
+.Flash-Sale-Images {
+    display: flex;
+    animation: slide 30s infinite; 
+    width: 900%; 
+    height: 350px;
+}
+
+.Flash-Sale-Images img {
+    width: 100%; 
+    height: auto;
+}
+
+.ptagFsale {
+    font-size: 25px;
+    margin-left: 40px;
+}
+
+/* Styles for 900px and above */
+@media (min-width: 900px) {
+    .Flash-Sale {
+        width: 75%;
+        margin-left: 1%;
+        margin-right: 10%;
+    }
+
+    .Flash-Sale-Images img {
+        width: 200%;
+    }
+}
+
+@media (min-width: 729px) and (max-width: 899px) {
+    .Flash-Sale {
+        margin-top: 3.5%;
+        margin-left: 1px;
+        height: 30vh;
+        width: 90%;
+    }
+    .Flash-Sale-Images{
+        width: 900%;
+        height: 100%;
+    }
+}
+
+
+
+
+/* Styles for 600px to 729px */
+@media (max-width: 729px) and (min-width: 600px) {
+    .Flash-Sale {
+        width: 80%;
+        margin-top: 2%;
+    }
+
+    .Flash-Sale-Images {
+        height: 185px; 
+        animation-duration: 25s;
+    }
+
+    .Flash-Sale-Images img {
+        width: 300%; 
+    }
+
+    .ptagFsale {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+}
+
+/* Styles for 400px to 599px */
+@media (max-width: 599px) and (min-width: 400px) {
+    .Flash-Sale{
+        width: 90%;
+        margin-top: 2.6%;
+    }
+    .Flash-Sale-Images {
+        height: 150px; 
+        animation-duration: 20s;
+    }
+
+    .Flash-Sale-Images img {
+        width: 900%; 
+    }
+
+    .ptagFsale {
+        font-size: 14px;
+        margin-left: 15px;
+    }
+}
+
+/* Styles for screens below 400px */
+@media (max-width: 399px) {
+    .Flash-Sale {
+        width: 80%;
+        margin-top: 2%;
+    }
+
+    .Flash-Sale-Images {
+        height: 100px; 
+        animation-duration: 15s;
+    }
+
+    .Flash-Sale-Images img {
+        width: 900%; 
+    }
+
+    .ptagFsale {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+}
+
+/* Keyframes for animation */
+@keyframes slide {
+    0%, 11.11%   { transform: translateX(0%); }     
+    12.22%, 22.22% { transform: translateX(-11.11%); } 
+    23.33%, 33.33% { transform: translateX(-22.22%); } 
+    34.44%, 44.44% { transform: translateX(-33.33%); } 
+    45.55%, 55.55% { transform: translateX(-44.44%); } 
+    56.66%, 66.66% { transform: translateX(-55.55%); } 
+    67.77%, 77.77% { transform: translateX(-66.66%); } 
+    78.88%, 88.88% { transform: translateX(-77.77%); } 
+    90%, 100%  { transform: translateX(-88.88%); }     
+}

@@ -1,0 +1,145 @@
+/* Input inside the upper bar */
+.inp-upperPage {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+}
+
+/* Input styling */
+#inp-upperPage {
+    width: 650px;
+    height: 45px;
+    border: none;
+    text-indent: 10px;
+}
+
+/* Search option styling */
+#search-imganchor img {
+    height: 20px;
+    margin-left: -35px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Media Queries */
+
+/* Adjustments for 900px and below */
+@media (max-width: 900px) {
+    .inp-upperPage {
+        margin-left: 1rem;
+        margin-top: 10%;
+    }
+
+    #inp-upperPage {
+        width: 65vw;
+        height: 30px;
+        font-size: 14px;
+        text-indent: 5.5px;
+    }
+
+    #search-imganchor img {
+        height: 15px;
+        width: 15px;
+    }
+}
+
+/* Adjustments for 729px and below */
+@media (max-width: 729px) {
+    .inp-upperPage {
+        margin-left: 1rem;
+    }
+
+    #inp-upperPage {
+        width: 60vw;
+        height: 25px;
+        font-size: 12px;
+        text-indent: 5px;
+    }
+
+    #search-imganchor img {
+        height: 10px;
+        width: 10px;
+    }
+}
+
+/* Adjustments for 600px and below */
+@media only screen and (min-width: 501px) and (max-width: 600px) {
+    #inp-upperPage {
+        width: 58vw;
+        height: 22px;
+        font-size: 10px;
+        text-indent: 3px;
+        padding-right: 25px; /* Adjust padding for icon space */
+        margin-top: -2%;
+    }
+
+
+    #search-imganchor {
+        
+        right: 160px; /* Adjust to position the icon correctly */
+        top: 0%;
+        margin-left: 20px;
+    }
+
+    #search-imganchor img {
+        height: 9px;
+        width: 9px;
+    }
+}
+
+@media  (min-width: 401px) and (max-width:500px) {
+
+    #inp-upperPage{
+        width: 58vw;
+       height: 17px ;
+    }
+}
+
+
+
+
+/* Adjustments for 400px and below */
+@media only screen and (min-width: 301px) and (max-width: 400px) {
+    #inp-upperPage {
+        width: 50vw;
+        height: 13.5px;
+        font-size: 8px;
+        text-indent: 2px;
+        padding-right: 20px; /* Adjust padding for icon space */
+    }
+
+    #search-imganchor {
+        right: 120px; /* Adjust to position the icon correctly */
+        top: 1%;
+    }
+
+    #search-imganchor img {
+        height: 7px;
+        width: 7px;
+        margin-left: -10px;
+    }
+}
+/* Adjustments for 300px and below */
+@media (max-width: 300px) {
+    #inp-upperPage {
+        width: 40vw;
+        height: 10px;
+        font-size: 6px;
+        text-indent: 1px;
+        padding-right: 15px; /* Add padding to make room for the icon */
+        position: relative; /* Ensure the input field is the reference for the icon */
+    }
+    
+    #search-imganchor {
+        position: absolute;
+        right: 90px; /* Adjust this value to align the icon to the right edge */
+        top: 1%;
+        transform: translateY(-50%); /* Center the icon vertically */
+    }
+    
+    #search-imganchor img {
+        height: 5px;
+        width: 5px;
+    }
+    
+}    
+

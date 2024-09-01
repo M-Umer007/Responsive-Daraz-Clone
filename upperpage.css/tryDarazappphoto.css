@@ -1,0 +1,16 @@
+/* havent add the photo but add in logo's place a div with borders for later use */
+/* .try-DarazApp{
+    width: 290px;
+    height: 350px;
+    border: 1px solid black;
+    margin-left: 77%;
+    margin-top: -27.4%;
+} */
+
+@media (min-width:729px) {
+    .try-DarazApp{
+        width: 0px;
+        height: 0px;
+        border: none;
+    }
+}
